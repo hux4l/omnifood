@@ -11,6 +11,7 @@
     /* fixed height we want to be sticky it later */
     height: 9.6rem;
     padding: 0 4.8rem;
+    position: relative;
 }
 
 .logo {
@@ -25,7 +26,7 @@
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 3.2rem;
+    gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -55,6 +56,35 @@
 .main-nav-link.nav-cta:active {
     background-color: #cf711f;
 }
+
+/*********************/
+/* mobile navigation */
+/*********************/
+.btn-mobile-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    display: none;
+}
+
+.icon-mobile-nav {
+    height: 4.8rem;
+    width: 4.8rem;
+    color: #333333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+    display: none;
+}
+
+/*
+select based on attribute name
+
+<ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+<ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+
+ */
 
 /****************/
 /* hero section */
@@ -301,6 +331,7 @@
     background-color: #fdf2e9;
     display: grid;
     grid-template-columns: 55fr 45fr;
+    align-items: center;
 }
 
 .testimonials-container {
