@@ -74,6 +74,7 @@ html {
     /* font-size: 10px; we will not set the font size to fixed value, but to percentage of the default browser font size*/
     font-size: 62.5%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
